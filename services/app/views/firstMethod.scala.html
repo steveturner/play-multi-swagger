@@ -1,0 +1,10 @@
+@(apiresponse: value.ApiResponse)
+
+@main("First Method") {
+
+<h1>code: @apiresponse.getCode()</h1>
+<h2>message: @apiresponse.getMessage()</h2>
+<h2>type: @apiresponse.getType()</h2>
+}
+
+

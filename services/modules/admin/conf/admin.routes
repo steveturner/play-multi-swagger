@@ -1,0 +1,13 @@
+GET   /                  controllers.admin.Application.home()
+
+# Note that you do not need to prefix routes or controller packages with the service name.
+# Doing so, however, can make code management much easier.
+
+GET   /admin          controllers.admin.Application.main()
+
+GET     /admin/metrics              com.kenshoo.play.metrics.MetricsController.metrics
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.admin.Assets.at(path="/public", file)
+
+->  / common.Routes

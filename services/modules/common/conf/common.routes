@@ -1,0 +1,9 @@
+
+# These are common routes that you may want all services to respond to.
+
+
+GET     /api-docs               controllers.ApiHelpController.getResources
+GET     /api   					controllers.common.Application.api()
+GET     /assets/*file               controllers.common.Assets.at(path="/public", file)
+
+GET   /status          controllers.common.Application.status()

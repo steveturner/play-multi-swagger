@@ -1,0 +1,14 @@
+
+# Delegate routes to sub-modules
+
+# Swagger - Root Resources Listing
+
+GET     /assets/﻿*file               controllers.Assets.at(path="/public", file)
+
+GET     /api-docs/server         controllers.ApiHelpController.getResource(path = "/server")
+GET    /server/firstMethod/:status             controllers.Application.firstMethod(status: String)
+->  / common.Routes
+
+->  / admin.Routes
+
+->  / web.Routes
