@@ -19,7 +19,7 @@ import javax.ws.rs.core.MediaType;
 public class Application extends JavaBaseApiController {
 
     @GET
-    @Path("/server/fisrtMethod")
+    @Path("/server/firstMethod")
     @ApiOperation(value = "Return woot hopefully!", response = Boolean.class, httpMethod = "GET")
     @ApiResponses(value = {@ApiResponse(code = Http.Status.BAD_REQUEST, message = "Invalid status value")})
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
